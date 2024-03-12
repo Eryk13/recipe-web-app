@@ -1,0 +1,57 @@
+<script>
+export default {
+  name: "MainLayout"
+}
+</script>
+
+<template>
+  <header id="main-header">
+    <nav id="main-header__nav">
+      <a id="main-header__logo">Recipe book</a>
+      <div id="main-header__links">
+        <a class="link">recipes</a>
+      </div>
+      <div id="main-header__auth-links">
+        <a class="link">login</a>
+        <a class="link">register</a>
+      </div>
+    </nav>
+  </header>
+  <slot></slot>
+  <footer>
+
+  </footer>
+</template>
+
+<style scoped>
+  #main-header{
+    padding: 1em 4em;
+    border-bottom: 1px solid lightgray;
+  }
+
+  #main-header__logo{
+    font-size: 2rem;
+  }
+
+  #main-header__logo{
+    cursor: pointer;
+  }
+
+  #main-header__links{
+    display: flex;
+    flex-grow: 1;
+    margin-left: 2rem;
+  }
+
+  #main-header__nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #main-header__auth-links{
+    display: flex;
+    gap: 1rem;
+  }
+
+</style>
