@@ -5,22 +5,28 @@ export default {
 </script>
 
 <template>
-  <header id="main-header">
-    <nav id="main-header__nav">
-      <a id="main-header__logo">Recipe book</a>
-      <div id="main-header__links">
-        <a class="link">recipes</a>
-      </div>
-      <div id="main-header__auth-links">
-        <a class="link">login</a>
-        <a class="link">register</a>
-      </div>
-    </nav>
-  </header>
-  <slot></slot>
-  <footer>
-
-  </footer>
+  <div id="wrapper">
+    <header id="main-header">
+      <nav id="main-header__nav">
+        <a id="main-header__logo">Recipe book</a>
+        <div id="main-header__links">
+          <a class="link">recipes</a>
+        </div>
+        <div id="main-header__auth-links">
+          <a class="link">login</a>
+          <a class="link">register</a>
+        </div>
+      </nav>
+    </header>
+    <main  id="content">
+      <slot></slot>
+    </main>
+    <footer>
+      <p>
+        Recipe book - 2024
+      </p>
+    </footer>
+  </div>
 </template>
 
 <style scoped>
@@ -54,4 +60,22 @@ export default {
     gap: 1rem;
   }
 
+  #content{
+    flex-grow: 1;
+  }
+
+  #wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  footer{
+    padding: 1em 4em;
+    border-top: 1px solid lightgray;
+  }
+
+  footer p{
+    margin: 0;
+  }
 </style>
