@@ -5,6 +5,14 @@ body{
   margin: 0;
 }
 
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+button:hover{
+  cursor: pointer;
+}
 /* || links */
 
 .link:hover{
