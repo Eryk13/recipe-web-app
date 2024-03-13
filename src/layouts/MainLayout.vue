@@ -62,6 +62,7 @@ export default {
 
   #content{
     flex-grow: 1;
+    padding: 0 4em;
   }
 
   #wrapper{
