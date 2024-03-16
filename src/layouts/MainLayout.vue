@@ -10,12 +10,12 @@ export default {
       <nav id="main-header__nav">
         <a id="main-header__logo">Recipe book</a>
         <div id="main-header__links">
-          <a class="link">recipes</a>
-          <a class="link">add</a>
+          <RouterLink class="link" :to="{name: 'recipes'}">recipes</RouterLink>
+          <RouterLink class="link" :to="{name: 'addRecipe'}">add</RouterLink>
         </div>
         <div id="main-header__auth-links">
-          <a class="link">login</a>
-          <a class="link">register</a>
+          <RouterLink class="link" :to="{name: 'login'}">login</RouterLink>
+          <RouterLink class="link" :to="{name: 'register'}">register</RouterLink>
         </div>
       </nav>
     </header>
