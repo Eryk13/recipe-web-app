@@ -11,6 +11,7 @@ export default {
         <a id="main-header__logo">Recipe book</a>
         <div id="main-header__links">
           <a class="link">recipes</a>
+          <a class="link">add</a>
         </div>
         <div id="main-header__auth-links">
           <a class="link">login</a>
@@ -47,6 +48,7 @@ export default {
     display: flex;
     flex-grow: 1;
     margin-left: 2rem;
+    gap: 1rem;
   }
 
   #main-header__nav{
